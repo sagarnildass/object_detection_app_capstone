@@ -1,0 +1,9 @@
+#From tensorflow/models
+#Training
+python object_detection/train.py -logtostderr --pipeline_config_path=C:\Anaconda3\envs\aind-dog\Lib\site-packages\tensorflow\models\object_detection\models\model\faster_rcnn_resnet101_voc07.config --train_dir=C:\Anaconda3\envs\aind-dog\Lib\site-packages\tensorflow\models\object_detection\models\model\train
+
+#Eval
+python object_detection/eval.py --logtostderr --pipeline_config_path=C:\Anaconda3\envs\aind-dog\Lib\site-packages\tensorflow\models\object_detection\models\model\faster_rcnn_resnet101_voc07.config --checkpoint_dir=C:\Anaconda3\envs\aind-dog\Lib\site-packages\tensorflow\models\object_detection\models\model\train --eval_dir=C:\Anaconda3\envs\aind-dog\Lib\site-packages\tensorflow\models\object_detection\models\model\eval
+
+#Tensorboard
+tensorboard --logdir=C:\Anaconda3\envs\aind-dog\Lib\site-packages\tensorflow\models\object_detection\models\model
